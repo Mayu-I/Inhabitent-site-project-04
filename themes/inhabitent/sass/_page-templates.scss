@@ -3,3 +3,7 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+.content-wrapper{
+    width: 1120px;
+    @include push-auto;
+}

@@ -29,8 +29,10 @@ $color__mediumgray: #808080;
 // Typography
 
 $font__main: "Merriweather", sans-serif;
-$font__accent: "novecento_sans_widenormal", sans-serif;
+$font__accent-sub: "novecento_sans_widenormal", sans-serif;
+$font__accent: "novecento_sans_widedemibold", sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
-$font__line-height-body: 1.5;
+$font__line-height-body: 1.75;
 $font__line-height-pre: 1.6;
+$font__size: 16px;

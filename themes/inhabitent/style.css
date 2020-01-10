@@ -104,7 +104,7 @@ h1 {
 h1,
 h2,
 h3 {
-  font-family: "novecento_sans_widenormal", sans-serif; }
+  font-family: "novecento_sans_widedemibold", sans-serif; }
 
 mark {
   background: #ff0;
@@ -411,7 +411,7 @@ textarea {
   font-family: "Merriweather", sans-serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5; }
+  line-height: 1.75; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -843,7 +843,13 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.content-wrapper {
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto; }
+
 .footer {
+  width: 100%;
   background-image: url("../../images/dark-wood.png");
   color: #ffffff; }
   .footer__box {
@@ -852,7 +858,9 @@ object {
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    padding-top: 3rem;
+    padding-bottom: 4rem; }
   .footer__info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -863,9 +871,32 @@ object {
     .footer__infoNav {
       margin: 0;
       padding: 0; }
+      .footer__infoNav i {
+        padding-right: 10px;
+        font-size: 20px; }
+      .footer__infoNav li {
+        line-height: 2.9; }
     .footer__infoSocial a {
       color: #ffffff; }
       .footer__infoSocial a:visited {
         color: #fff; }
-  .footer__list h3 {
-    color: #d99054; }
+      .footer__infoSocial a i {
+        line-height: 2.5;
+        font-size: 19px;
+        margin-right: 10px; }
+  .footer__list {
+    margin-right: 4rem; }
+    .footer__list h3 {
+      font-weight: bold;
+      color: #d99054;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1.8px; }
+  .footer__logo {
+    text-align: right; }
+    .footer__logo img {
+      max-width: 78%;
+      padding-top: 1rem; }
+  .footer__copy {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-family: "novecento_sans_widenormal", sans-serif; }

@@ -8,7 +8,6 @@
 
 // Add your custom post types here...
 // Register Custom Post Type
-// Register Custom Post Type
 function create_product_type()
 {
 
