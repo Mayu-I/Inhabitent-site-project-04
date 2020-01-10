@@ -68,6 +68,12 @@ h1 {
 	margin: 0.67em 0;
 }
 
+h1,
+h2,
+h3{
+	font-family: $font__accent;
+}
+
 mark {
 	background: #ff0;
 	color: #000;
@@ -212,4 +218,9 @@ table {
 td,
 th {
 	padding: 0;
+}
+
+ul,
+li{
+	list-style: none;
 }

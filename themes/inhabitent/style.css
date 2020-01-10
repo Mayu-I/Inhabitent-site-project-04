@@ -1,7 +1,7 @@
 /*!
 Theme Name: Inhabitent
 Theme URI: http://underscores.me/
-Author: RED Academy
+Author: Mayu Imanaka
 Author URI: http://www.redacademy.com
 Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
@@ -100,6 +100,11 @@ dfn {
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
+
+h1,
+h2,
+h3 {
+  font-family: "novecento_sans_widenormal", sans-serif; }
 
 mark {
   background: #ff0;
@@ -222,9 +227,178 @@ td,
 th {
   padding: 0; }
 
-/*--------------------------------------------------------------
-# Embedded Fonts
---------------------------------------------------------------*/
+ul,
+li {
+  list-style: none; }
+
+@font-face {
+  font-family: '.';
+  src: url("../../fonts/8a4994569ce1e9d19f38dc5123bf3360.eot");
+  src: url("../../fonts/8a4994569ce1e9d19f38dc5123bf3360.eot?#iefix") format("embedded-opentype"), url("../../fonts/8a4994569ce1e9d19f38dc5123bf3360.woff2") format("woff2"), url("../../fonts/8a4994569ce1e9d19f38dc5123bf3360.woff") format("woff"), url("../../fonts/8a4994569ce1e9d19f38dc5123bf3360.ttf") format("truetype"), url("../../fonts/8a4994569ce1e9d19f38dc5123bf3360.svg#.") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../fonts/Merriweather-LightItalic.eot");
+  src: url("../../fonts/Merriweather-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-LightItalic.woff2") format("woff2"), url("../../fonts/Merriweather-LightItalic.woff") format("woff"), url("../../fonts/Merriweather-LightItalic.ttf") format("truetype"), url("../../fonts/Merriweather-LightItalic.svg#Merriweather-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../fonts/Merriweather-Bold.eot");
+  src: url("../../fonts/Merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-Bold.woff2") format("woff2"), url("../../fonts/Merriweather-Bold.woff") format("woff"), url("../../fonts/Merriweather-Bold.ttf") format("truetype"), url("../../fonts/Merriweather-Bold.svg#Merriweather-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: '.';
+  src: url("../../fonts/44f34d0b68557426882c57825db73e2d.eot");
+  src: url("../../fonts/44f34d0b68557426882c57825db73e2d.eot?#iefix") format("embedded-opentype"), url("../../fonts/44f34d0b68557426882c57825db73e2d.woff2") format("woff2"), url("../../fonts/44f34d0b68557426882c57825db73e2d.woff") format("woff"), url("../../fonts/44f34d0b68557426882c57825db73e2d.ttf") format("truetype"), url("../../fonts/44f34d0b68557426882c57825db73e2d.svg#.") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../fonts/Merriweather-BoldItalic.eot");
+  src: url("../../fonts/Merriweather-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-BoldItalic.woff2") format("woff2"), url("../../fonts/Merriweather-BoldItalic.woff") format("woff"), url("../../fonts/Merriweather-BoldItalic.ttf") format("truetype"), url("../../fonts/Merriweather-BoldItalic.svg#Merriweather-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../fonts/Merriweather-Light.eot");
+  src: url("../../fonts/Merriweather-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-Light.woff2") format("woff2"), url("../../fonts/Merriweather-Light.woff") format("woff"), url("../../fonts/Merriweather-Light.ttf") format("truetype"), url("../../fonts/Merriweather-Light.svg#Merriweather-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'merriweatherbold_italic';
+  src: url("../../fonts/merriweatherbold_italic.eot");
+  src: url("../../fonts/merriweatherbold_italic.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweatherbold_italic.woff2") format("woff2"), url("../../fonts/merriweatherbold_italic.woff") format("woff"), url("../../fonts/merriweatherbold_italic.ttf") format("truetype"), url("../../fonts/merriweatherbold_italic.svg#merriweatherbold_italic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'merriweatherlight_italic';
+  src: url("../../fonts/merriweatherlight_italic.eot");
+  src: url("../../fonts/merriweatherlight_italic.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweatherlight_italic.woff2") format("woff2"), url("../../fonts/merriweatherlight_italic.woff") format("woff"), url("../../fonts/merriweatherlight_italic.ttf") format("truetype"), url("../../fonts/merriweatherlight_italic.svg#merriweatherlight_italic") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'novecento_sans_widedemibold';
+  src: url("../../fonts/novecento_sans_widedemibold.eot");
+  src: url("../../fonts/novecento_sans_widedemibold.eot?#iefix") format("embedded-opentype"), url("../../fonts/novecento_sans_widedemibold.woff2") format("woff2"), url("../../fonts/novecento_sans_widedemibold.woff") format("woff"), url("../../fonts/novecento_sans_widedemibold.ttf") format("truetype"), url("../../fonts/novecento_sans_widedemibold.svg#novecento_sans_widedemibold") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'merriweatherlight';
+  src: url("../../fonts/merriweatherlight.eot");
+  src: url("../../fonts/merriweatherlight.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweatherlight.woff2") format("woff2"), url("../../fonts/merriweatherlight.woff") format("woff"), url("../../fonts/merriweatherlight.ttf") format("truetype"), url("../../fonts/merriweatherlight.svg#merriweatherlight") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'novecento_sans_widenormal';
+  src: url("../../fonts/novecento_sans_widenormal.eot");
+  src: url("../../fonts/novecento_sans_widenormal.eot?#iefix") format("embedded-opentype"), url("../../fonts/novecento_sans_widenormal.woff2") format("woff2"), url("../../fonts/novecento_sans_widenormal.woff") format("woff"), url("../../fonts/novecento_sans_widenormal.ttf") format("truetype"), url("../../fonts/novecento_sans_widenormal.svg#novecento_sans_widenormal") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'merriweatherbold';
+  src: url("../../fonts/merriweatherbold.eot");
+  src: url("../../fonts/merriweatherbold.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweatherbold.woff2") format("woff2"), url("../../fonts/merriweatherbold.woff") format("woff"), url("../../fonts/merriweatherbold.ttf") format("truetype"), url("../../fonts/merriweatherbold.svg#merriweatherbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../fonts/Merriweather-LightItalic_1.eot");
+  src: url("../../fonts/Merriweather-LightItalic_1.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-LightItalic_1.woff2") format("woff2"), url("../../fonts/Merriweather-LightItalic_1.woff") format("woff"), url("../../fonts/Merriweather-LightItalic_1.ttf") format("truetype"), url("../../fonts/Merriweather-LightItalic_1.svg#Merriweather-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../fonts/Merriweather-Bold_1.eot");
+  src: url("../../fonts/Merriweather-Bold_1.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-Bold_1.woff2") format("woff2"), url("../../fonts/Merriweather-Bold_1.woff") format("woff"), url("../../fonts/Merriweather-Bold_1.ttf") format("truetype"), url("../../fonts/Merriweather-Bold_1.svg#Merriweather-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: '.';
+  src: url("../../fonts/7280bab2f4d647ebe44fcc679bc58ae3.eot");
+  src: url("../../fonts/7280bab2f4d647ebe44fcc679bc58ae3.eot?#iefix") format("embedded-opentype"), url("../../fonts/7280bab2f4d647ebe44fcc679bc58ae3.woff2") format("woff2"), url("../../fonts/7280bab2f4d647ebe44fcc679bc58ae3.woff") format("woff"), url("../../fonts/7280bab2f4d647ebe44fcc679bc58ae3.ttf") format("truetype"), url("../../fonts/7280bab2f4d647ebe44fcc679bc58ae3.svg#.") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../fonts/Merriweather-BoldItalic_1.eot");
+  src: url("../../fonts/Merriweather-BoldItalic_1.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-BoldItalic_1.woff2") format("woff2"), url("../../fonts/Merriweather-BoldItalic_1.woff") format("woff"), url("../../fonts/Merriweather-BoldItalic_1.ttf") format("truetype"), url("../../fonts/Merriweather-BoldItalic_1.svg#Merriweather-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../fonts/Merriweather-Light_1.eot");
+  src: url("../../fonts/Merriweather-Light_1.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-Light_1.woff2") format("woff2"), url("../../fonts/Merriweather-Light_1.woff") format("woff"), url("../../fonts/Merriweather-Light_1.ttf") format("truetype"), url("../../fonts/Merriweather-Light_1.svg#Merriweather-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: '.';
+  src: url("../../fonts/b3f3920fa013434b61bc8fa062a74c49.eot");
+  src: url("../../fonts/b3f3920fa013434b61bc8fa062a74c49.eot?#iefix") format("embedded-opentype"), url("../../fonts/b3f3920fa013434b61bc8fa062a74c49.woff2") format("woff2"), url("../../fonts/b3f3920fa013434b61bc8fa062a74c49.woff") format("woff"), url("../../fonts/b3f3920fa013434b61bc8fa062a74c49.ttf") format("truetype"), url("../../fonts/b3f3920fa013434b61bc8fa062a74c49.svg#.") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../fonts/Merriweather-Light_2.eot");
+  src: url("../../fonts/Merriweather-Light_2.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-Light_2.woff2") format("woff2"), url("../../fonts/Merriweather-Light_2.woff") format("woff"), url("../../fonts/Merriweather-Light_2.ttf") format("truetype"), url("../../fonts/Merriweather-Light_2.svg#Merriweather-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../fonts/Merriweather-LightItalic_2.eot");
+  src: url("../../fonts/Merriweather-LightItalic_2.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-LightItalic_2.woff2") format("woff2"), url("../../fonts/Merriweather-LightItalic_2.woff") format("woff"), url("../../fonts/Merriweather-LightItalic_2.ttf") format("truetype"), url("../../fonts/Merriweather-LightItalic_2.svg#Merriweather-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: '.';
+  src: url("../../fonts/24e33e9990bd15842b8274f26ff2ecab.eot");
+  src: url("../../fonts/24e33e9990bd15842b8274f26ff2ecab.eot?#iefix") format("embedded-opentype"), url("../../fonts/24e33e9990bd15842b8274f26ff2ecab.woff2") format("woff2"), url("../../fonts/24e33e9990bd15842b8274f26ff2ecab.woff") format("woff"), url("../../fonts/24e33e9990bd15842b8274f26ff2ecab.ttf") format("truetype"), url("../../fonts/24e33e9990bd15842b8274f26ff2ecab.svg#.") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../fonts/Merriweather-Bold_2.eot");
+  src: url("../../fonts/Merriweather-Bold_2.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-Bold_2.woff2") format("woff2"), url("../../fonts/Merriweather-Bold_2.woff") format("woff"), url("../../fonts/Merriweather-Bold_2.ttf") format("truetype"), url("../../fonts/Merriweather-Bold_2.svg#Merriweather-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../fonts/Merriweather-BoldItalic_2.eot");
+  src: url("../../fonts/Merriweather-BoldItalic_2.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-BoldItalic_2.woff2") format("woff2"), url("../../fonts/Merriweather-BoldItalic_2.woff") format("woff"), url("../../fonts/Merriweather-BoldItalic_2.ttf") format("truetype"), url("../../fonts/Merriweather-BoldItalic_2.svg#Merriweather-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: '.';
+  src: url("../../fonts/655ba092c5e833db5782a25a6b5abfc1.eot");
+  src: url("../../fonts/655ba092c5e833db5782a25a6b5abfc1.eot?#iefix") format("embedded-opentype"), url("../../fonts/655ba092c5e833db5782a25a6b5abfc1.woff2") format("woff2"), url("../../fonts/655ba092c5e833db5782a25a6b5abfc1.woff") format("woff"), url("../../fonts/655ba092c5e833db5782a25a6b5abfc1.ttf") format("truetype"), url("../../fonts/655ba092c5e833db5782a25a6b5abfc1.svg#.") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -234,7 +408,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -295,7 +469,6 @@ html {
 *,
 *:before,
 *:after {
-  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
@@ -319,7 +492,7 @@ hr {
 
 ul,
 ol {
-  margin: 0 0 1.5rem 3rem; }
+  margin: 0; }
 
 ul {
   list-style: disc; }
@@ -420,9 +593,9 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #248A83; }
   a:visited {
-    color: purple; }
+    color: #404040; }
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
@@ -670,3 +843,29 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.footer {
+  background-image: url("../../images/dark-wood.png");
+  color: #ffffff; }
+  .footer__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .footer__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    .footer__infoNav {
+      margin: 0;
+      padding: 0; }
+    .footer__infoSocial a {
+      color: #ffffff; }
+      .footer__infoSocial a:visited {
+        color: #fff; }
+  .footer__list h3 {
+    color: #d99054; }

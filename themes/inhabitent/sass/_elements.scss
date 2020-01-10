@@ -10,7 +10,6 @@ html {
 *,
 *:before,
 *:after {
-  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
   box-sizing: inherit;
 }
 
@@ -37,7 +36,7 @@ hr {
 
 ul,
 ol {
-  margin: 0 0 $base__space-unit ($base__space-unit * 2);
+  margin: 0;
 }
 
 ul {

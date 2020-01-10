@@ -1,0 +1,29 @@
+.footer{
+    background-image: url("../../images/dark-wood.png");
+    color: #ffffff;
+    &__box{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info{
+        display: flex;
+        justify-content: flex-start;
+        &Nav{
+            margin: 0;
+            padding: 0;
+        }
+        &Social{
+            a{
+            color: #ffffff;
+            &:visited{
+                color: #fff;
+            }
+        }
+        }
+    }
+    &__list{
+        & h3{
+            color: $color__orange;
+        }
+    }
+}
