@@ -5,7 +5,7 @@
  * @package   Inhabitent Functionality
  * @author    Mayu Imanaka <imamayu.1215@gmail.com>
  * @license   GPL-2.0+
- * @copyright 2020 Your Name or Company
+ * @copyright 2020 Mayu Imanaka
  *
  * @wordpress-plugin
  * Plugin Name: Inhabitent Functionality

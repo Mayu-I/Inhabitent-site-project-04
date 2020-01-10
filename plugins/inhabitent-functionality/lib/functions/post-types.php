@@ -8,7 +8,8 @@
 
 // Add your custom post types here...
 // Register Custom Post Type
-function custom_post_type()
+// Register Custom Post Type
+function create_product_type()
 {
 
     $labels = array(
@@ -45,7 +46,7 @@ function custom_post_type()
         'description'           => __('Product post', 'text_domain'),
         'labels'                => $labels,
         'supports'              => array('title', 'editor'),
-        'taxonomies'            => array('category', 'post_tag'),
+        'taxonomies'            => array('product_taxonomy'),
         'hierarchical'          => false,
         'public'                => true,
         'show_ui'               => true,
@@ -58,7 +59,14 @@ function custom_post_type()
         'exclude_from_search'   => false,
         'publicly_queryable'    => true,
         'capability_type'       => 'page',
+        'show_in_rest'          => true,
+        'template_lock'         => 'all',
+        'template'              => array(
+            array('core/paragraph', array(
+                'placeholder' => 'Add content...',
+            ))
+        )
     );
-    register_post_type('post_type', $args);
+    register_post_type('product_type', $args);
 }
-add_action('init', 'custom_post_type', 0);
+add_action('init', 'create_product_type', 0);
