@@ -1,6 +1,6 @@
 .header{
     background-color: hsla(0,0%,100%,.85);
-    border-bottom:1px solid #e1e1e1;
+    border-bottom:$border__solid;
     position: fixed;
     padding: .5rem 0;
     width: 100%;
@@ -13,6 +13,7 @@
         color: $color__green;
     }
     &__logo{
+        height: 33px;
         img{
             max-width: 25%;
         }

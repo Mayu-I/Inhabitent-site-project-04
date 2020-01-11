@@ -17,6 +17,9 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-family: $font__accent;
 }
 
 /* Copy */
@@ -71,4 +74,8 @@ h2 {
     color: #2f1339;
     font-size: 2.1rem;
     margin-bottom: 1.5rem;
+	}
+
+	h1, h2 {
+		line-height: 1.25;
 	}

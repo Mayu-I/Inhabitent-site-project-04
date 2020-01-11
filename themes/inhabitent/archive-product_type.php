@@ -9,29 +9,30 @@
 get_header(); ?>
 
 <div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
-
+    <main id="main" class="site-main products content-wrapper" role="main">
         <?php if (have_posts()) : ?>
-
-            <header class="page-header">
-            <h1 class="page-title">Shop Stuff</h1>
-            ul
+            <header class="products__header">
+                <h1 class="prodcut__title">Shop Stuff</h1>
+                <ul class="products__nav">
+                    <li><a href="">DO</a></li>
+                    <li><a href="">EAT</a></li>
+                    <li><a href="">SLEEP</a></li>
+                    <li><a href="">WEAR</a></li>
+                </ul>
             </header>
-
-            <?php /* Start the Loop */ ?>
-            <?php while (have_posts()) : the_post(); ?>
-
-                <?php
-                get_template_part('template-parts/content');
-                ?>
-
-            <?php endwhile; ?>
-
+            <div class="products__grid">
+                <?php /* Start the Loop */ ?>
+                <?php while (have_posts()) : the_post(); ?>
+                    <?php
+                    get_template_part('template-parts/content-products');
+                    ?>
+                <?php endwhile; ?>
+            </div>
             <?php the_posts_navigation(); ?>
 
         <?php else : ?>
 
-            <?php get_template_part('template-parts/content', 'none'); ?>
+            <?php get_template_part('template-parts/content-products', 'none'); ?>
 
         <?php endif; ?>
 

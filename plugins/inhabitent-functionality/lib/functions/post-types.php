@@ -44,7 +44,7 @@ function create_product_type()
         'label'                 => __('Product', 'text_domain'),
         'description'           => __('Product post', 'text_domain'),
         'labels'                => $labels,
-        'supports'              => array('title', 'editor'),
+        'supports'              => array('title', 'editor', 'thumbnail'),
         'taxonomies'            => array('product_taxonomy'),
         'hierarchical'          => false,
         'public'                => true,

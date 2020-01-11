@@ -39,3 +39,7 @@
 }
 }
 
+body:not(.home):not(.page-template-about):not(.single-adventure) .content-area, body:not(.home):not(.page-template-about):not(.single-adventure) .widget-area {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
