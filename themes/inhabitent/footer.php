@@ -35,7 +35,10 @@
 					</ul>
 				</div>
 			</div>
-			<div class="footer__logo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-text.svg" alt=""></div>
+			<div class="footer__logo">
+				<a href="<?php echo esc_url(home_url('/')); ?>">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-text.svg" alt="">
+				</a></div>
 		</div>
 		<div class="footer__copy">COPYRIGHT ©︎ 2020 INHABITENT</div>
 	</div>

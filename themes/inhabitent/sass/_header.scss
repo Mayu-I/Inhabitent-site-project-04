@@ -1,0 +1,49 @@
+.header{
+    background-color: hsla(0,0%,100%,.85);
+    border-bottom:1px solid #e1e1e1;
+    position: fixed;
+    padding: .5rem 0;
+    width: 100%;
+    transition: top .5s linear;
+    z-index: 3;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $color__green;
+    }
+    &__logo{
+        img{
+            max-width: 25%;
+        }
+    }
+    &__nav{
+        font-family: $font__accent-sub;
+        a{
+        color: $color__green;
+        text-decoration: none;
+        margin: 0 0.8rem;
+    }
+    i{
+        margin: 0 0.8rem;
+    }
+    }
+}
+
+.header.header--white{
+    background-color: transparent;
+    border-bottom: 0;
+    position: absolute;
+    text-shadow: 1px 1px 2px #323232;
+    .header__wrapper{
+        color: #ffffff;
+    }
+    .header__nav{
+        a{
+            color: #ffffff;
+        }
+        p{
+            text-align: left;
+        }
+    }
+}

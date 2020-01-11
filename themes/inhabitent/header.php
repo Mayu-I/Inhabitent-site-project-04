@@ -24,17 +24,38 @@
 	<div id="page" class="hfeed site">
 		<div>
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html('Skip to content'); ?></a>
-			<header class="header content-wrapper" role="banner">
-				<div class="header__wrapper">
-					<div class="header__logo">
-						<a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-tent-white.svg" alt=""></a>
+
+			<?php
+			if ( is_home() && is_page('32')) :
+			?>
+				<header class="header header--white" role="banner">
+					<div class="header__wrapper content-wrapper">
+						<div class="header__logo">
+							<a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-tent-white.svg" alt=""></a>
+						</div>
+						<nav class="header__nav">
+							<a href="<?php echo esc_url(home_url('/')); ?>product_type">SHOP</a>
+							<a href="">JOURNAL</a>
+							<a href="<?php echo esc_url(home_url('/')); ?>about">ABOUT</a>
+							<a href="">FIND US</a>
+							<i class="fas fa-search"></i>
+						</nav>
 					</div>
-					<nav class="header__nav">
-						<a href="">SHOP</a>
-						<a href="">JOURNAL</a>
-						<a href="">ABOUT</a>
-						<a href="">FIND US</a>
-					</nav>
-				</div>
-			</header>
-			<div id="content" class="site-content content-wrapper">
+				</header>
+			<?php else : ?>
+				<header class="header" role="banner">
+					<div class="header__wrapper content-wrapper">
+						<div class="header__logo">
+							<a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg" alt=""></a>
+						</div>
+						<nav class="header__nav">
+							<a href="<?php echo esc_url(home_url('/')); ?>product_type">SHOP</a>
+							<a href="">JOURNAL</a>
+							<a href="<?php echo esc_url(home_url('/')); ?>about">ABOUT</a>
+							<a href="">FIND US</a>
+							<i class="fas fa-search"></i>
+						</nav>
+					</div>
+				</header>
+			<?php endif; ?>
+			<div id="content" class="site-content">
