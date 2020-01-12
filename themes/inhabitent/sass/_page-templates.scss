@@ -39,7 +39,32 @@
 }
 }
 
-body:not(.home):not(.page-template-about):not(.single-adventure) .content-area, body:not(.home):not(.page-template-about):not(.single-adventure) .widget-area {
+body:not(.page-template-about):not(.single-adventure) .content-area, body:not(.home):not(.page-template-about) .widget-area{ 
     padding-top: 3rem;
     padding-bottom: 3rem;
+}
+
+body:not(.page-about):not(.home):not(.single-product) {
+	.site-content {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+		display: flex;
+        @include content-wrapper;
+	}
+
+	.content-area {
+		border-right: $border__solid;
+		padding-right: 5%;
+		width: 73%;
+	}
+
+	.widget-area {
+		padding-left: 5%;
+		width: 27%;
+	}
+}
+
+.page-title{
+    font-size: 2.4rem;
+    margin-top: 0;
 }

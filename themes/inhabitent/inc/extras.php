@@ -27,3 +27,14 @@ function red_starter_body_classes($classes)
 	return $classes;
 }
 add_filter('body_class', 'red_starter_body_classes');
+
+function post_has_archive( $args, $post_type ) {
+ 
+    if ( 'post' == $post_type ) {
+        $args['rewrite'] = true;
+        $args['has_archive'] = 'journal'; 
+    }
+    return $args;
+ 
+}
+add_filter( 'register_post_type_args', 'post_has_archive', 10, 2 );
