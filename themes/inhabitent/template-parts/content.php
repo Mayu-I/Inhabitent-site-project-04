@@ -14,8 +14,7 @@
             <?php the_post_thumbnail('large'); ?>
         <?php endif; ?>
 
-        <?php the_title(sprintf('<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>'); ?>
-
+        <?php the_title(sprintf('<a href="%s" rel="bookmark"><h1 class="entry-title">', esc_url(get_permalink())), '</h1></a>'); ?>
         <?php if ('post' === get_post_type()) : ?>
             <div class="entry-meta">
                 <?php red_starter_posted_on(); ?> / <?php comments_number('0 Comments', '1 Comment', '% Comments'); ?> / <?php red_starter_posted_by(); ?>
@@ -25,5 +24,6 @@
 
     <div class="entry-content">
         <?php the_excerpt(); ?>
+        <p><a href="<?php the_permalink(); ?>" class="read-more">Read more →</a></p>
     </div><!-- .entry-content -->
 </article><!-- #post-## -->

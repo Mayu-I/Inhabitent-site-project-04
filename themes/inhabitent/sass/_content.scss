@@ -48,3 +48,13 @@
 .bypostauthor {
 	display: block;
 }
+
+.cat-links, .tags-links {
+    display: inline-block;
+    font-family: $font__accent-sub;
+    text-transform: uppercase;
+}
+
+.cat-links {
+    margin-right: 1.5rem;
+}

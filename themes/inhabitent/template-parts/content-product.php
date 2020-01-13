@@ -23,10 +23,10 @@
 			<div class="entry-content">
 				<p class="product__price">$<?php echo get_post_meta(get_the_ID(), 'price', true) ?></p>
 				<?php the_content(); ?>
-				<div class="product__social">
-					<button type="button" class="product__btn"><i class="fab fa-facebook-f"></i>Like</button>
-					<button type="button" class="product__btn"><i class="fab fa-twitter"></i>Tweet</button>
-					<button type="button" class="product__btn"><i class="fab fa-pinterest"></i>Pin</button>
+				<div class="social">
+					<button type="button" class="social__btn"><i class="fab fa-facebook-f"></i>Like</button>
+					<button type="button" class="social__btn"><i class="fab fa-twitter"></i>Tweet</button>
+					<button type="button" class="social__btn"><i class="fab fa-pinterest"></i>Pin</button>
 				</div>
 			</div><!-- .entry-content -->
 		</div>
