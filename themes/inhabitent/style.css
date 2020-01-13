@@ -546,6 +546,7 @@ table {
 --------------------------------------------------------------*/
 /* Buttons */
 button,
+.btn,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -562,6 +563,7 @@ input[type="submit"] {
   text-decoration: none;
   text-transform: uppercase; }
   button:hover,
+  .btn:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
@@ -621,7 +623,7 @@ a {
   color: #248A83;
   text-decoration: none; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #2f1339; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -881,41 +883,15 @@ object {
 .gallery-caption {
   display: block; }
 
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
 .content-wrapper {
   width: 1120px;
   margin-left: auto;
   margin-right: auto; }
 
-.site-content {
+body:not(.home) .site-content {
   padding-top: 50px; }
 
-.page-about .entry-header {
-  height: 100vh;
-  margin-bottom: 3rem; }
-  .page-about .entry-header h1 {
-    font-size: 3rem; }
-
-.page-about .entry-content {
-  margin-top: 0;
-  margin-bottom: 4.5rem; }
-  .page-about .entry-content h2 {
-    text-align: center; }
-
-.page-about .entry-content > :not(header) {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 800px; }
-
-.page-about .entry-title {
-  color: #ffffff; }
-
-.page-about .site-content {
-  padding: 0; }
-
-body:not(.page-template-about):not(.single-adventure) .content-area, body:not(.home):not(.page-template-about) .widget-area {
+body:not(.page-about):not(.single-adventure):not(.home) .content-area, body:not(.home):not(.page-template-about) .widget-area {
   padding-top: 3rem;
   padding-bottom: 3rem; }
 
@@ -968,6 +944,101 @@ body:not(.page-about):not(.home):not(.single-product):not(.tax-product):not(.pos
       border: 1px solid #248A83;
       color: #fff; }
 
+.entry-title, .page-title {
+  margin-top: 0; }
+
+.required {
+  color: #d99054; }
+
+/*--------------------------------------------------------------
+home
+--------------------------------------------------------------*/
+.home h2 {
+  font-size: 2.4rem;
+  margin-bottom: 3.75rem;
+  text-align: center;
+  font-family: "novecento_sans_widenormal", sans-serif; }
+
+.home-hero {
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/home-hero.jpg) no-repeat top;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
+  background-size: cover,cover;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  height: 100vh; }
+
+.home__products {
+  margin-bottom: 4.5rem; }
+  .home__productsWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center; }
+  .home__productsType {
+    border: 1px solid #e1e1e1;
+    border-top-width: 5px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 23.5%;
+            flex: 0 1 23.5%;
+    max-width: 23.5%;
+    padding: .75rem; }
+    .home__productsType:hover {
+      border: 1px solid #d99054;
+      border-top-width: 5px; }
+    .home__productsType img {
+      width: 70px;
+      height: 70px; }
+
+.home__journals {
+  margin-bottom: 4.5rem; }
+  .home__journals ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 0; }
+  .home__journals li {
+    border: 1px solid #e1e1e1;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 32%;
+            flex: 0 1 32%;
+    position: relative; }
+  .home__journalsThumbnail {
+    background-color: #e1e1e1;
+    height: 250px;
+    overflow: hidden;
+    position: relative; }
+  .home__journalsInfo {
+    padding: 0.75rem;
+    padding-bottom: 1rem; }
+  .home__journals h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.75rem; }
+  .home__journals .entry-meta {
+    font-size: .75rem; }
+
+/*--------------------------------------------------------------
+comment
+--------------------------------------------------------------*/
 .comment {
   padding-top: 1.5rem; }
   .comment article {
@@ -1019,11 +1090,45 @@ body:not(.page-about):not(.home):not(.single-product):not(.tax-product):not(.pos
 .comment-form-cookies-consent {
   display: none; }
 
-.required {
-  color: #d99054; }
+/*--------------------------------------------------------------
+about
+--------------------------------------------------------------*/
+.page-about .entry-header {
+  height: 100vh;
+  margin-bottom: 3rem; }
+  .page-about .entry-header h1 {
+    font-size: 3rem; }
 
-.entry-title, .page-title {
-  margin-top: 0; }
+.page-about .entry-content {
+  margin-top: 0;
+  margin-bottom: 4.5rem; }
+  .page-about .entry-content h2 {
+    text-align: center; }
+
+.page-about .entry-content > :not(header) {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px; }
+
+.page-about .entry-title {
+  color: #ffffff; }
+
+.page-about .site-content {
+  padding: 0; }
+
+/*--------------------------------------------------------------
+find
+--------------------------------------------------------------*/
+.find iframe {
+  width: 100%; }
+
+/*--------------------------------------------------------------
+search
+--------------------------------------------------------------*/
+.search .page-header {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem; }
 
 .header {
   background-color: rgba(255, 255, 255, 0.85);
@@ -1273,7 +1378,7 @@ body:not(.page-about):not(.home):not(.single-product):not(.tax-product):not(.pos
 .journals .entry-title a {
   color: #ffffff; }
 
-.journals .read-more {
+.read-more {
   -webkit-box-shadow: 0;
           box-shadow: 0;
   border: 1px solid #000;
@@ -1287,12 +1392,9 @@ body:not(.page-about):not(.home):not(.single-product):not(.tax-product):not(.pos
   border-radius: 0;
   background-color: transparent;
   margin-right: 5px; }
-  .journals .read-more i {
+  .read-more i {
     margin-right: 10px; }
-  .journals .read-more:hover {
+  .read-more:hover {
     background-color: #248A83;
     border: 1px solid #248A83;
     color: #fff; }
-
-.find iframe {
-  width: 100%; }

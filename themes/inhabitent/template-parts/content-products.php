@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template part for displaying posts.
+ * Template part for displaying products posts.
  *
  * @package RED_Starter_Theme
  */

@@ -1,45 +1,13 @@
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
-
 .content-wrapper{
     width: 1120px;
     @include push-auto;
 }
 
-.site-content{
+body:not(.home) .site-content{
     padding-top: 50px;
 }
 
-.page-about {
-.entry-header{
-    height: 100vh;
-    margin-bottom: 3rem;
-    h1{
-        font-size: 3rem;
-    }
-}
-.entry-content{
-    margin-top: 0;
-    margin-bottom: 4.5rem;
-    h2{
-        text-align: center;
-    }
-}
-.entry-content>:not(header) {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 800px;
-}
-.entry-title{
-    color: #ffffff;
-}
-.site-content{
-    padding: 0;
-}
-}
-
-body:not(.page-template-about):not(.single-adventure) .content-area, body:not(.home):not(.page-template-about) .widget-area{ 
+body:not(.page-about):not(.single-adventure):not(.home) .content-area, body:not(.home):not(.page-template-about) .widget-area{ 
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
@@ -96,6 +64,100 @@ body:not(.page-about):not(.home):not(.single-product):not(.tax-product):not(.pos
 }
 }
 
+.entry-title, .page-title {
+    margin-top: 0;
+}
+
+.required {
+    color: $color__orange;
+}
+
+
+/*--------------------------------------------------------------
+home
+--------------------------------------------------------------*/
+.home{
+    h2{
+        font-size: 2.4rem;
+        margin-bottom: 3.75rem;
+        text-align: center;
+        font-family: $font__accent-sub;
+    }
+&-hero {
+    -ms-flex-align: center;
+    align-items: center;
+    background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../images/home-hero.jpg) no-repeat top;
+    background-size: cover,cover;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100vh;
+}
+&__products{
+    margin-bottom: 4.5rem;
+    &Wrapper{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+&Type{
+    border: $border__solid;
+    border-top-width: 5px;
+    flex: 0 1 23.5%;
+    max-width: 23.5%;
+    padding: .75rem;
+    &:hover{
+        border: 1px solid $color__orange;
+        border-top-width: 5px;
+    }
+    img{
+        width: 70px;
+        height: 70px;
+    }
+}
+}
+&__journals{
+    margin-bottom: 4.5rem;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        margin-bottom: 0;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    li{
+        border: 1px solid #e1e1e1;
+        flex: 0 1 32%;
+        position: relative;
+    }
+    &Thumbnail{
+        background-color: #e1e1e1;
+        height: 250px;
+        overflow: hidden;
+        position: relative;
+    }
+    &Info{
+        padding: 0.75rem;
+        padding-bottom: 1rem;
+    }
+    h3{
+        font-size: 1.3rem;
+    margin-bottom: 1.75rem;
+    }
+    .entry-meta{
+        font-size: .75rem;
+    }
+}
+}
+
+
+/*--------------------------------------------------------------
+comment
+--------------------------------------------------------------*/
 .comment{
     padding-top: 1.5rem;
     article {
@@ -159,10 +221,53 @@ body:not(.page-about):not(.home):not(.single-product):not(.tax-product):not(.pos
     display: none;
 }
 
-.required {
-    color: $color__orange;
-}
 
-.entry-title, .page-title {
-    margin-top: 0;
+/*--------------------------------------------------------------
+about
+--------------------------------------------------------------*/
+.page-about {
+    .entry-header{
+        height: 100vh;
+        margin-bottom: 3rem;
+        h1{
+            font-size: 3rem;
+        }
+    }
+    .entry-content{
+        margin-top: 0;
+        margin-bottom: 4.5rem;
+        h2{
+            text-align: center;
+        }
+    }
+    .entry-content>:not(header) {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 800px;
+    }
+    .entry-title{
+        color: #ffffff;
+    }
+    .site-content{
+        padding: 0;
+    }
+    }
+
+    
+/*--------------------------------------------------------------
+find
+--------------------------------------------------------------*/
+    .find{
+        iframe{
+            width: 100%;
+        }
+    }
+
+/*--------------------------------------------------------------
+search
+--------------------------------------------------------------*/
+.search .page-header {
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
 }
