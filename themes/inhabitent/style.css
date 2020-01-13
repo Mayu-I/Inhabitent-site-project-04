@@ -919,7 +919,7 @@ body:not(.page-template-about):not(.single-adventure) .content-area, body:not(.h
   padding-top: 3rem;
   padding-bottom: 3rem; }
 
-body:not(.page-about):not(.home):not(.single-product) .site-content {
+body:not(.page-about):not(.home):not(.single-product):not(.tax-product):not(.post-type-archive-product_type) .site-content {
   padding-top: 3rem;
   padding-bottom: 3rem;
   display: -webkit-box;
@@ -929,12 +929,12 @@ body:not(.page-about):not(.home):not(.single-product) .site-content {
   margin-right: auto;
   margin-left: auto; }
 
-body:not(.page-about):not(.home):not(.single-product) .content-area {
+body:not(.page-about):not(.home):not(.single-product):not(.tax-product):not(.post-type-archive-product_type) .content-area {
   border-right: 1px solid #e1e1e1;
   padding-right: 5%;
   width: 73%; }
 
-body:not(.page-about):not(.home):not(.single-product) .widget-area {
+body:not(.page-about):not(.home):not(.single-product):not(.tax-product):not(.post-type-archive-product_type) .widget-area {
   padding-left: 5%;
   width: 27%; }
 
@@ -1146,7 +1146,8 @@ body:not(.page-about):not(.home):not(.single-product) .widget-area {
   margin-left: 0;
   padding-left: 0;
   text-transform: uppercase;
-  margin-bottom: 40px; }
+  margin-bottom: 50px;
+  margin-top: 20px; }
   .products__nav li {
     margin: 0 1.5rem; }
 
@@ -1231,6 +1232,10 @@ body:not(.page-about):not(.home):not(.single-product) .widget-area {
 .single-product_type #primary {
   padding-top: 3rem;
   padding-bottom: 3rem; }
+
+.taxonomy-description {
+  margin: 2rem auto 3rem;
+  max-width: 800px; }
 
 .journal .entry-header, .journals .entry-header {
   line-height: 0;

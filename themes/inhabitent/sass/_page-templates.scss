@@ -44,7 +44,7 @@ body:not(.page-template-about):not(.single-adventure) .content-area, body:not(.h
     padding-bottom: 3rem;
 }
 
-body:not(.page-about):not(.home):not(.single-product) {
+body:not(.page-about):not(.home):not(.single-product):not(.tax-product):not(.post-type-archive-product_type) {
 	.site-content {
         padding-top: 3rem;
         padding-bottom: 3rem;

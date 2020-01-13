@@ -19,7 +19,8 @@
         margin-left: 0;
         padding-left: 0;
         text-transform: uppercase;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
+        margin-top: 20px;
         li{
             margin: 0 1.5rem;
         }
@@ -111,4 +112,9 @@ width: 48%;
         padding-top: 3rem;
         padding-bottom: 3rem;
     }
+}
+
+.taxonomy-description {
+    margin: 2rem auto 3rem;
+    max-width: 800px;
 }

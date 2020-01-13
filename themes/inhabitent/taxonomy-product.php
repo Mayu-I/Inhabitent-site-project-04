@@ -12,13 +12,10 @@ get_header(); ?>
     <main id="main" class="site-main products content-wrapper" role="main">
         <?php if (have_posts()) : ?>
             <header class="products__header">
-                <h1 class="products__title">Shop Stuff</h1>
-                <ul class="products__nav">
-                    <li><a href="<?php echo esc_url(home_url('/')); ?>/product/do">DO</a></li>
-                    <li><a href="<?php echo esc_url(home_url('/')); ?>/product/eat">EAT</a></li>
-                    <li><a href="<?php echo esc_url(home_url('/')); ?>/product/sleep">SLEEP</a></li>
-                    <li><a href="<?php echo esc_url(home_url('/')); ?>/product/wear">WEAR</a></li>
-                </ul>
+                <h1 class="product__title"><?php single_tag_title(); ?></h1>
+                <div class="taxonomy-description">
+                    <p><?php echo term_description(); ?></p>
+                </div>
             </header>
             <div class="products__grid">
                 <?php /* Start the Loop */ ?>

@@ -8,7 +8,6 @@
 
 // Add your custom taxonomies here...
 // Register Custom Taxonomy
-// Register Custom Taxonomy
 
 
 // Register Custom Taxonomy
