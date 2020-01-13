@@ -18,15 +18,50 @@
             max-width: 25%;
         }
     }
+    &__info{
+        display: flex;
+    }
     &__nav{
         font-family: $font__accent-sub;
         a{
         color: $color__green;
         text-decoration: none;
         margin: 0 0.8rem;
+        &:hover{
+            color: $color__purple;
+        }
     }
     i{
         margin: 0 0.8rem;
+    }
+    }
+    &__search{
+        line-height: 1;
+        padding-left: 1.5rem;
+        fieldset{
+            padding: 0;
+        }
+        .search-toggle{
+            float: left;
+            padding-top: .33rem;
+            display: block;
+        }
+        label{
+        float: left;
+        margin: 0;
+        display: none;
+    }
+    .search-field{
+        border: 0;
+    background: transparent;
+    font-family: Novecento Sans Web,sans-serif;
+    margin-left: .75rem;
+    padding: 0 .3rem;
+    text-transform: uppercase;
+    width: 100%;
+    &:focus{
+        outline:none;
+    }
     }
     }
 }
@@ -42,9 +77,22 @@
     .header__nav{
         a{
             color: #ffffff;
+            &:hover{
+                color: $color__yellow;
+            }
         }
         p{
             text-align: left;
         }
     }
+    .search-toggle{
+        color: #ffffff;
+    }
+    .search-field{
+        color: #ffffff;
+    &::placeholder{
+        color: $color__yellow;
+        font-size: 1rem;
+    }
+}
 }

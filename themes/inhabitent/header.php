@@ -15,7 +15,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-	<script src="https://kit.fontawesome.com/be014b79a7.js" crossorigin="anonymous"></script>
 
 	<?php wp_head(); ?>
 </head>
@@ -33,15 +32,17 @@
 						<div class="header__logo">
 							<a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-tent-white.svg" alt=""></a>
 						</div>
-						<nav class="header__nav">
-							<a href="<?php echo esc_url(home_url('/')); ?>product_type">SHOP</a>
-							<a href="<?php echo esc_url(home_url('/')); ?>journal">JOURNAL</a>
-							<a href="<?php echo esc_url(home_url('/')); ?>about">ABOUT</a>
-							<a href="<?php echo esc_url(home_url('/')); ?>find-us">FIND US</a>
+						<div class="header__info">
+							<nav class="header__nav">
+								<a href="<?php echo esc_url(home_url('/')); ?>product_type">SHOP</a>
+								<a href="<?php echo esc_url(home_url('/')); ?>journal">JOURNAL</a>
+								<a href="<?php echo esc_url(home_url('/')); ?>about">ABOUT</a>
+								<a href="<?php echo esc_url(home_url('/')); ?>find-us">FIND US</a>
+							</nav>
 							<div class="header__search">
 								<?php get_search_form(); ?>
 							</div>
-						</nav>
+						</div>
 					</div>
 				</header>
 			<?php else : ?>
@@ -50,16 +51,17 @@
 						<div class="header__logo">
 							<a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg" alt=""></a>
 						</div>
-						<nav class="header__nav">
-							<a href="<?php echo esc_url(home_url('/')); ?>product_type">SHOP</a>
-							<a href="<?php echo esc_url(home_url('/')); ?>journal">JOURNAL</a>
-							<a href="<?php echo esc_url(home_url('/')); ?>about">ABOUT</a>
-							<a href="<?php echo esc_url(home_url('/')); ?>find-us">FIND US</a>
+						<div class="header__info">
+							<nav class="header__nav">
+								<a href="<?php echo esc_url(home_url('/')); ?>product_type">SHOP</a>
+								<a href="<?php echo esc_url(home_url('/')); ?>journal">JOURNAL</a>
+								<a href="<?php echo esc_url(home_url('/')); ?>about">ABOUT</a>
+								<a href="<?php echo esc_url(home_url('/')); ?>find-us">FIND US</a>
+							</nav>
 							<div class="header__search">
 								<?php get_search_form(); ?>
-								<i class="fas fa-search"></i>
 							</div>
-						</nav>
+						</div>
 					</div>
 				</header>
 			<?php endif; ?>

@@ -950,6 +950,9 @@ body:not(.page-about):not(.home):not(.single-product):not(.tax-product):not(.pos
 .required {
   color: #d99054; }
 
+.search-toggle {
+  display: none; }
+
 /*--------------------------------------------------------------
 home
 --------------------------------------------------------------*/
@@ -1154,14 +1157,43 @@ search
     height: 33px; }
     .header__logo img {
       max-width: 25%; }
+  .header__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .header__nav {
     font-family: "novecento_sans_widenormal", sans-serif; }
     .header__nav a {
       color: #248A83;
       text-decoration: none;
       margin: 0 0.8rem; }
+      .header__nav a:hover {
+        color: #2f1339; }
     .header__nav i {
       margin: 0 0.8rem; }
+  .header__search {
+    line-height: 1;
+    padding-left: 1.5rem; }
+    .header__search fieldset {
+      padding: 0; }
+    .header__search .search-toggle {
+      float: left;
+      padding-top: .33rem;
+      display: block; }
+    .header__search label {
+      float: left;
+      margin: 0;
+      display: none; }
+    .header__search .search-field {
+      border: 0;
+      background: transparent;
+      font-family: Novecento Sans Web,sans-serif;
+      margin-left: .75rem;
+      padding: 0 .3rem;
+      text-transform: uppercase;
+      width: 100%; }
+      .header__search .search-field:focus {
+        outline: none; }
 
 .header.header--white {
   background-color: transparent;
@@ -1172,8 +1204,26 @@ search
     color: #ffffff; }
   .header.header--white .header__nav a {
     color: #ffffff; }
+    .header.header--white .header__nav a:hover {
+      color: #f0e4d1; }
   .header.header--white .header__nav p {
     text-align: left; }
+  .header.header--white .search-toggle {
+    color: #ffffff; }
+  .header.header--white .search-field {
+    color: #ffffff; }
+    .header.header--white .search-field::-webkit-input-placeholder {
+      color: #f0e4d1;
+      font-size: 1rem; }
+    .header.header--white .search-field::-moz-placeholder {
+      color: #f0e4d1;
+      font-size: 1rem; }
+    .header.header--white .search-field::-ms-input-placeholder {
+      color: #f0e4d1;
+      font-size: 1rem; }
+    .header.header--white .search-field::placeholder {
+      color: #f0e4d1;
+      font-size: 1rem; }
 
 .footer {
   width: 100%;
