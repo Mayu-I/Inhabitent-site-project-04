@@ -26,7 +26,7 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html('Skip to content'); ?></a>
 
 			<?php
-			if ( is_page('32')) :
+			if (is_page('32')) :
 			?>
 				<header class="header header--white" role="banner">
 					<div class="header__wrapper content-wrapper">
@@ -37,7 +37,7 @@
 							<a href="<?php echo esc_url(home_url('/')); ?>product_type">SHOP</a>
 							<a href="<?php echo esc_url(home_url('/')); ?>journal">JOURNAL</a>
 							<a href="<?php echo esc_url(home_url('/')); ?>about">ABOUT</a>
-							<a href="">FIND US</a>
+							<a href="<?php echo esc_url(home_url('/')); ?>find-us">FIND US</a>
 							<i class="fas fa-search"></i>
 						</nav>
 					</div>
@@ -52,7 +52,7 @@
 							<a href="<?php echo esc_url(home_url('/')); ?>product_type">SHOP</a>
 							<a href="<?php echo esc_url(home_url('/')); ?>journal">JOURNAL</a>
 							<a href="<?php echo esc_url(home_url('/')); ?>about">ABOUT</a>
-							<a href="">FIND US</a>
+							<a href="<?php echo esc_url(home_url('/')); ?>find-us">FIND US</a>
 							<i class="fas fa-search"></i>
 						</nav>
 					</div>

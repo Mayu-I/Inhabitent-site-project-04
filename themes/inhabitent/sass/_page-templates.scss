@@ -162,3 +162,7 @@ body:not(.page-about):not(.home):not(.single-product) {
 .required {
     color: $color__orange;
 }
+
+.entry-title, .page-title {
+    margin-top: 0;
+}
