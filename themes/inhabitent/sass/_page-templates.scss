@@ -3,7 +3,7 @@
     @include push-auto;
 }
 
-body:not(.home) .site-content{
+body:not(.home):not(.page-about) .site-content{
     padding-top: 50px;
 }
 
@@ -12,7 +12,7 @@ body:not(.page-about):not(.single-adventure):not(.home) .content-area, body:not(
     padding-bottom: 3rem;
 }
 
-body:not(.page-about):not(.home):not(.single-product):not(.tax-product):not(.post-type-archive-product_type) {
+body:not(.page-about):not(.home):not(.single-product):not(.tax-product):not(.post-type-archive-product_type):not(.post-type-archive-adventures) {
 	.site-content {
         padding-top: 3rem;
         padding-bottom: 3rem;

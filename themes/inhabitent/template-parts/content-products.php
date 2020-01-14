@@ -1,12 +1,3 @@
-<?php
-
-/**
- * Template part for displaying products posts.
- *
- * @package RED_Starter_Theme
- */
-
-?>
 <article class="products__item">
 	<div class="products__thumbnail">
 		<a href="<?php the_permalink(); ?>">

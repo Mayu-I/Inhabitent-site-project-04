@@ -8,24 +8,22 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area">
-    <main id="main" class="site-main products content-wrapper" role="main">
+<div id="primary" class="content-area adventures content-wrapper">
+    <main id="main" class="site-main" role="main">
+
+
         <?php if (have_posts()) : ?>
-            <header class="products__header">
-                <h1 class="products__title">Shop Stuff</h1>
-                <ul class="products__nav">
-                    <li><a href="<?php echo esc_url(home_url('/')); ?>/product/do">DO</a></li>
-                    <li><a href="<?php echo esc_url(home_url('/')); ?>/product/eat">EAT</a></li>
-                    <li><a href="<?php echo esc_url(home_url('/')); ?>/product/sleep">SLEEP</a></li>
-                    <li><a href="<?php echo esc_url(home_url('/')); ?>/product/wear">WEAR</a></li>
-                </ul>
+            <header class="adventures__header">
+                <h1 class="adventures__title">Latest Adventures</h1>
             </header>
-            <div class="products__grid">
+            <div class="adventures__grid">
                 <?php /* Start the Loop */ ?>
                 <?php while (have_posts()) : the_post(); ?>
+
                     <?php
-                    get_template_part('template-parts/content', 'products');
+                    get_template_part('template-parts/content', 'adventures');
                     ?>
+
                 <?php endwhile; ?>
             </div>
             <?php the_posts_navigation(); ?>

@@ -72,7 +72,7 @@ add_action('init', 'create_product_type', 0);
 
 
 // Register Custom Post Type
-function adventures()
+function create_adventures()
 {
 
     $labels = array(
@@ -127,4 +127,4 @@ function adventures()
     );
     register_post_type('adventures', $args);
 }
-add_action('init', 'adventures', 0);
+add_action('init', 'create_adventures', 0);
