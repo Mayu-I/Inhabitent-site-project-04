@@ -17,13 +17,12 @@ get_header(); ?>
                 <h1 class="adventures__title">Latest Adventures</h1>
             </header>
             <div class="adventures__grid">
-                <?php /* Start the Loop */ ?>
                 <?php while (have_posts()) : the_post(); ?>
-
-                    <?php
-                    get_template_part('template-parts/content', 'adventures');
-                    ?>
-
+                    <div class="adventures__item">
+                        <?php
+                        get_template_part('template-parts/content', 'adventures');
+                        ?>
+                    </div>
                 <?php endwhile; ?>
             </div>
             <?php the_posts_navigation(); ?>
