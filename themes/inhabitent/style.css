@@ -890,14 +890,14 @@ object {
   margin-left: auto;
   margin-right: auto; }
 
-body:not(.home):not(.page-about) .site-content {
+body:not(.home):not(.page-about):not(.single-adventures) .site-content {
   padding-top: 50px; }
 
-body:not(.page-about):not(.single-adventure):not(.home) .content-area, body:not(.home):not(.page-template-about) .widget-area {
+body:not(.page-about):not(.single-adventure):not(.home):not(.single-adventures) .content-area, body:not(.home):not(.page-template-about) .widget-area {
   padding-top: 3rem;
   padding-bottom: 3rem; }
 
-body:not(.page-about):not(.home):not(.single-product):not(.tax-product):not(.post-type-archive-product_type):not(.post-type-archive-adventures) .site-content {
+body:not(.page-about):not(.home):not(.single-product):not(.tax-product):not(.post-type-archive-product_type):not(.single-adventures):not(.post-type-archive-adventures) .site-content {
   padding-top: 3rem;
   padding-bottom: 3rem;
   display: -webkit-box;
@@ -907,12 +907,12 @@ body:not(.page-about):not(.home):not(.single-product):not(.tax-product):not(.pos
   margin-right: auto;
   margin-left: auto; }
 
-body:not(.page-about):not(.home):not(.single-product):not(.tax-product):not(.post-type-archive-product_type):not(.post-type-archive-adventures) .content-area {
+body:not(.page-about):not(.home):not(.single-product):not(.tax-product):not(.post-type-archive-product_type):not(.single-adventures):not(.post-type-archive-adventures) .content-area {
   border-right: 1px solid #e1e1e1;
   padding-right: 5%;
   width: 73%; }
 
-body:not(.page-about):not(.home):not(.single-product):not(.tax-product):not(.post-type-archive-product_type):not(.post-type-archive-adventures) .widget-area {
+body:not(.page-about):not(.home):not(.single-product):not(.tax-product):not(.post-type-archive-product_type):not(.single-adventures):not(.post-type-archive-adventures) .widget-area {
   padding-left: 5%;
   width: 27%; }
 
@@ -1522,3 +1522,20 @@ search
   border: 1px solid #fff;
   color: #fff;
   background-color: transparent; }
+  .adventures .white-btn:hover {
+    background-color: #248A83; }
+
+.adventure .entry-header img {
+  width: 100%; }
+
+.adventure .content-wrapper {
+  max-width: 800px; }
+
+.adventure .entry-title {
+  margin-top: 3rem; }
+
+.adventure .entry-meta {
+  font-family: "novecento_sans_widenormal", sans-serif;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  text-transform: uppercase; }

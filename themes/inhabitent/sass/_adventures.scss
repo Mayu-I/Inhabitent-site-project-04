@@ -73,5 +73,28 @@
         border: 1px solid #fff;
         color: #fff;
         background-color: transparent;
+        &:hover{
+            background-color: $color__green;
+        }
     }
 }
+
+.adventure{
+    .entry-header{
+        img{
+        width: 100%;
+    }
+    }
+    .content-wrapper{
+        max-width: 800px;
+    }
+    .entry-title{
+        margin-top: 3rem;
+    }
+    .entry-meta{
+        font-family: $font__accent-sub;
+    font-size: 19.2px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+    }
