@@ -1228,7 +1228,7 @@ search
   width: 100%;
   -webkit-transition: top .5s linear;
   transition: top .5s linear;
-  z-index: 3; }
+  z-index: 999; }
   .header__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
