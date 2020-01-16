@@ -41,6 +41,7 @@
             background-color: transparent;
             &:hover{
                 background-color: $color__green;
+                border: 1px solid $color__green;
             }
         }
 
