@@ -32,6 +32,12 @@ body:not(.page-about):not(.home):not(.single-product):not(.tax-product):not(.pos
 	}
 }
 
+.archive:not(.post-type-archive):not(.tax-product-type) .page-header, .search .page-header {
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+}
+
 .page-title{
     font-size: 2.4rem;
     margin-top: 0;
