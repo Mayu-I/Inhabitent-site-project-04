@@ -10,6 +10,13 @@ plugins/*
 !plugins/inhabitent-functionality/
 !plugins/business-hours-widget/
 !plugins/red-functionality/
+!plugins/contact-form-7/
+!plugins/debug-bar/
+!plugins/custom-field-suite/
+!plugins/duplicate-post/
+!plugins/inhabitent-blocks-master/
+!plugins/intuitive-custom-post-order/
+!plugins/query-monitor/
 # Ignore everything in "themes" except the active theme. #
 themes/*
 !themes/inhabitent/
