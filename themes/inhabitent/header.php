@@ -24,7 +24,7 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html('Skip to content'); ?></a>
 
 			<?php
-			if (is_front_page() || is_page('32') ||  (get_post_type() === 'adventures' && is_single())) :
+			if (is_front_page() || is_page('70') ||  (get_post_type() === 'adventures' && is_single())) :
 			?>
 				<header class="header header--white" role="banner">
 					<div class="header__wrapper content-wrapper">

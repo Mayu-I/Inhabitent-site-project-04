@@ -8,7 +8,7 @@
 
 	<div class="products__info">
 		<h2 class="entry-title"><?php the_title(); ?></h2>
-		<span class="products__price">$<?php echo get_post_meta(get_the_ID(), 'price', true) ?></span>
+		<span class="products__price">$<?php echo get_post_meta(get_the_ID(), 'price', true) ?>.00</span>
 	</div>
 
 	<?php if ('post' === get_post_type()) : ?>

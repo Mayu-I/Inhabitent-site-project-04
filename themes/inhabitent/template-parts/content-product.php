@@ -11,7 +11,7 @@
 			</header><!-- .entry-header -->
 
 			<div class="entry-content">
-				<p class="product__price">$<?php echo get_post_meta(get_the_ID(), 'price', true) ?></p>
+				<p class="product__price">$<?php echo get_post_meta(get_the_ID(), 'price', true) ?>.00</p>
 				<?php the_content(); ?>
 				<div class="social">
 					<button type="button" class="social__btn"><i class="fab fa-facebook-f"></i>Like</button>
